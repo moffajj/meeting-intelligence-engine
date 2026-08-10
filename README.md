@@ -6,6 +6,8 @@ An AI-powered meeting preparation tool that generates complete pre-call briefs f
 
 Live demo: https://johnmoffa.com (scroll to Agents section)
 
+> **Note:** This repo is a showcase snapshot of the Meeting Intelligence Agent. The actively maintained, deployment-ready version — with a customer access gate, optional HubSpot integration, and rate limiting — lives in [john-moffa-site](https://github.com/moffajj/john-moffa-site).
+
 ## Tech stack
 Next.js 16, Vercel, Claude API (claude-sonnet-4-5), Upstash Redis, HubSpot Private App API (optional), Tailwind CSS, Framer Motion
 
@@ -38,3 +40,6 @@ Set `APP_ACCESS_TOKEN` to a random secret. Share `https://yoursite.com/?token=<v
 
 ## HubSpot integration (optional)
 If `HUBSPOT_ACCESS_TOKEN` is not set, all HubSpot calls are skipped and the CRM sync UI is hidden. To enable it, set both `HUBSPOT_ACCESS_TOKEN` and `NEXT_PUBLIC_HUBSPOT_ENABLED=true`.
+
+## Deploying this for a customer
+For current, complete deployment instructions — including how to set the access gate, configure rate limiting, and wire up HubSpot — see the [john-moffa-site README](https://github.com/moffajj/john-moffa-site#readme). That repo is the canonical deployment target; this one is the isolated agent source for reference.
